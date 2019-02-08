@@ -12,10 +12,10 @@ class Config
     public function __construct()
     {
         $this->dbConfig = [
-            'host' => env('DB_HOST'),
+            'host' => env('localhost'),
             'port' => env('DB_PORT', 3306),
-            'user' => env('DB_USER'),
-            'pass' => env('DB_PASS')
+            'user' => env('root'),
+            'pass' => env('Il0veNikuM4n!')
         ];
     }
 }
