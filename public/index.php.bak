@@ -6,9 +6,12 @@ $config = new App\Config();
 ?>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
     body {
       background-color: transparent;
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -52,9 +55,9 @@ $config = new App\Config();
 <body class="htmlNoPages">
   <form action="login.php" method="post">
   <p style="text-align: right;">  
-  <a href="login.php" class="btn btn-primary">Login</a>  
-  <a href="register.php" class="btn btn-primary">Register</a> 
- </form>
+  <button id="loginButton" class="float-right submit-button">Login</button>
+  <button id="registerButton" class="float-right submit-button">Register</button>
+  </form>
   </p>
   <h1 style="text-align: center;">
     <span style="color: #ff0000;">
@@ -67,9 +70,12 @@ $config = new App\Config();
   <h3 style="text-align: center;">From the #1 Store, Right to your Door!</h3>
   <h3>
     <img style="display: block; margin-left: auto; margin-right: auto;" src="images/mascot2.png" alt="" width="158" height="203" />
- <br></br>
   </h3>
   <h3>&nbsp;</h3>
   <p>&nbsp;</p>
+  <img src="images/nikuman.png" id="IMG_1" class="gwd-img-1dej">
+  <img src="images/pizza.png" id="IMG_2" class="gwd-img-15t8">
+  <img src="images/curryman.png" id="IMG_3" class="gwd-img-13lj">
+  <img src="images/anpanman.png" id="IMG_4" class="gwd-img-ye0x">
 </body>
 </html>

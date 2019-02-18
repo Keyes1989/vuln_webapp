@@ -2,7 +2,6 @@
 
 require_once __DIR__ . '/../bootstrap/app.php';
 
-$config = new App\Config();
 ?>
 <html>
    <head>
@@ -27,11 +26,12 @@ $config = new App\Config();
          <div style = "width:300px; border: solid 1px #333333; " align = "left">
             <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
             <div style = "margin:30px">
-               <form action = "" method = "post">
-                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-                  <input type = "submit" name="submi" value = " Submit "/><br />
+               <form action = "auth.php" method = "post">
+                  <label>UserName  :</label><input type = "text" name = "username"><br /><br />
+                  <label>Password  :</label><input type = "password" name = "password"><br/><br />
+                  <input type = "submit" value="Submit"><br />
                </form>
+		 <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
             </div>
          </div>            
